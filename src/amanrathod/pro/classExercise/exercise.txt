@@ -1,0 +1,57 @@
+Implement console program which will meet the following requirements:
+    a. Implement class Book that has next properties:
+        i.   int id - unique identifier
+        ii.  String name - name of a book
+        iii. Author[] authors - array of authors
+        iv.  Publisher publisher - book publisher
+        v.   int publishingYear - year of publishing
+        vi.  int amountOfPages - amount of pages
+        vii. BigDecimal price - price of a book
+        viii. CoverType coverType - type of book binding, enum (Paperback, Hardcover)
+
+    b. Implement Author class that has next properties:
+        i.   int id - unique identifier
+        ii.  String firstName - author’s first name
+        iii. String lastName - author’s last name
+
+    c. Implement Publisher class that has next properties:
+        i.  int id - unique identifier
+        ii. String publisherName - name of a publisher
+
+    d. Implement multiple constructors for Book, Author and Publisher class.
+
+    e. Implement enum type CoverType with two enums - Paperback and Hardcover
+
+    f. Override toString methods for Book, Author and Publisher class.
+
+    g. Implement class BookService with the next methods
+        ```
+        public Book[] filterBooksByAuthor(Author author, Book[] books) {
+        	<write your code here>
+        }
+
+        public Book[] filterBooksByPublisher(Publisher publisher, Book[] books) {
+        	<write your code here>
+        }
+
+        // methods keeps books with publishing year inclusively.
+        public Book[] filterBooksAfterSpecifiedYear(int yearFromInclusively, Book[] books) {
+        	<write your code here>
+        }
+        ```
+
+    h. Implement a Demo class that has the main method. In demo class perform next actions:
+        i. Create an array of books. You can use the next variable for demo purposes.
+            ```
+            Book[] books = new Book[] {
+                    new Book(1, "Book_1", new Author[] { new Author(1, "Jon", "Johnson") }, new Publisher(1, "Publisher_1"), 1990, 231, BigDecimal.valueOf(24.99), CoverType.PAPERBACK),
+
+                    new Book(2, "Book_2", new Author[] { new Author(1, "Jon", "Johnson"), new Author(2, "William", "Wilson") }, new Publisher(2, "Publisher_2"), 2000, 120, BigDecimal.valueOf(14.99), CoverType.PAPERBACK),
+
+                    new Book(3, "Book_3", new Author[] { new Author(3, "Walter", "Peterson") }, new Publisher(1, "Publisher_1"), 1997, 350, BigDecimal.valueOf(34.99), CoverType.HARDCOVER),
+
+                    new Book(4, "Book_4", new Author[] { new Author(4, "Craig", "Gregory") }, new Publisher(3, "Publisher_3"), 1992, 185, BigDecimal.valueOf(19.99), CoverType.PAPERBACK) };
+            ```
+
+        ii. Create an instance of the BookService type and demonstrate the work of BookService methods, namely - filterBooksByAuthor, filterBooksByPublisher, filterBooksAfterSpecifiedYear.
+
