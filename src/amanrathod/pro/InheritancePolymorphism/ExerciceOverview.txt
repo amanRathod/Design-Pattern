@@ -1,0 +1,33 @@
+Implement console program which will meet the following requirements:
+    a. Implement a hierarchy of Sweets. All Sweets should have next properties:
+        name, weight and sugarWeight. Weight is a weight of the specific sweet in
+        kilograms. sugarWeight is a weight of sugar in this sweet in kilograms.
+
+        I don’t want to give you specific directions here to give you an opportunity to
+        decide what will work the best here to start describing the Sweet hierarchy: an
+        interface or an abstract class?
+
+    b. Candy, Lollipop and Cookie - three other types from Sweet hierarchy.
+
+    c. Create class Present. Present has next behavior:
+        ```
+            // the method filters sweets by sugar weight inclusively
+            public Sweet[] filterSweetsBySugarRange(double minSugarWeight,
+            double maxSugarWeight) {
+            <write your code here>
+            }
+            // the method calculates total weight of the present
+            public double calculateTotalWeight() {
+            <write your code here>
+            }
+            // the method that adds sweet to the present
+            public void addSweet(Sweet sweet) {
+            <write your code here>
+            }
+            // the method returns copy of the Sweet[] array so that nobody could
+            // modify state of the present without addSweet() method.
+            // Also array shouldn’t contain null values.
+            public Sweet[] getSweets() {
+            <write your code here>
+            }
+        ```
