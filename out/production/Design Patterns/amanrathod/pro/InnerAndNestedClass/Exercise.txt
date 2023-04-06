@@ -1,0 +1,35 @@
+Implement console program which will meet the following requirements:
+    a. Implement class Account. Class Account has next fields:
+        i.  int id
+        ii. Transaction[] transactions
+
+    b. Implement enum StandardAccountOperations that contains next enums:
+        i.   MONEY_TRANSFER_SEND
+        ii.  MONEY_TRANSFER_RECEIVE
+        iii. WITHDRAW
+
+    c. Implement nested class Transaction that has next fields:
+        i.   Account accountFrom
+        ii.  Account accountTo
+        iii. double moneyAmount
+        iv.  StandardAccountOperations operation
+
+    d. In Account class implement next methods:
+        ```
+            public void sendMoneyToAccount(Account accountTo, double moneyAmount) {
+            	<write your code here>
+            }
+
+            public void withdrawMoney(double moneyAmount) {
+            	<write your code here>
+            }
+
+            public Transaction[] getTransactions() {
+            	<write your code here>
+            }
+        ```
+    e. Pay attention that when money is sent from one account to another -
+        one transaction MONEY_TRANSFER_SEND created in one account, and
+        the second transaction MONEY_TRANSFER_RECEIVE is created in other account.
+
+
