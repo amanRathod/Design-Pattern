@@ -1,17 +1,16 @@
-package factory_Pattern;
+package FactoryPattern;
 
 // Child Class
-public class Professor extends Person {
+public class Student extends Person {
     private String name;
     private String gender;
     private String qualification;
 
-    public Professor(String name, String gender, String qualification) {
+    public Student(String name, String gender, String qualification) {
         this.name = name;
         this.gender = gender;
         this.qualification = qualification;
     }
-
     @Override
     public String getName() {
         return this.name;

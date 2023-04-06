@@ -1,4 +1,4 @@
-package factory_Pattern;
+package FactoryPattern;
 
 // Super Class
 public abstract class Person {

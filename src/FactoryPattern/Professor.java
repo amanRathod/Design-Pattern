@@ -1,12 +1,12 @@
-package factory_Pattern;
+package FactoryPattern;
 
 // Child Class
-public class TeachingAssistant extends Person {
+public class Professor extends Person {
     private String name;
     private String gender;
     private String qualification;
 
-    public TeachingAssistant(String name, String gender, String qualification) {
+    public Professor(String name, String gender, String qualification) {
         this.name = name;
         this.gender = gender;
         this.qualification = qualification;
