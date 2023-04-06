@@ -1,4 +1,7 @@
-package observerPattern;
+package observerPattern.Observer;
+
+import observerPattern.Observable.NewsAgency;
+import observerPattern.Observer.Observer;
 
 public class NewsSubscriber implements Observer {
     private String name;

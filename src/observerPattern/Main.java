@@ -1,5 +1,8 @@
 package observerPattern;
 
+import observerPattern.Observable.NewsAgency;
+import observerPattern.Observer.NewsSubscriber;
+
 public class Main {
     public static void main(String[] args) {
         NewsAgency subject = new NewsAgency();

@@ -1,4 +1,7 @@
-package observerPattern;
+package observerPattern.Observable;
+
+import observerPattern.Observer.NewsSubscriber;
+import observerPattern.Observer.Observer;
 
 public interface Subject {
     public void registerObserver(NewsSubscriber sub);

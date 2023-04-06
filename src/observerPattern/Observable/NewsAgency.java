@@ -1,4 +1,7 @@
-package observerPattern;
+package observerPattern.Observable;
+
+import observerPattern.Observer.NewsSubscriber;
+import observerPattern.Observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
